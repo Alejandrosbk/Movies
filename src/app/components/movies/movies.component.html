@@ -1,0 +1,231 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s2  black-text"><a href="#all" class="active">All</a></li>
+                <li class="tab col s2  black-text"><a href="#releases">New Releases</a></li>
+                <li class="tab col s2  black-text"><a href="#popular">Most Popular</a></li>
+                <li class="tab col s2  black-text"><a href="#trends">Trends</a></li>
+                <li class="tab col s2  black-text"><a href="#favorites">My Favorites</a></li>
+                <li class="tab col s2  black-text"><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </div>
+        <div id="all" class="col s12">
+            <div class="row mt-4">
+                <div class="col s12 m6 l3" *ngFor="let movie of moviesService.movies">
+                    <div class="box">
+                        <img [src]="movie.url" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>{{movie.titulo}}</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="releases" class="col s12">
+            <div class="row mt-4">
+                <div class="col s12 m6 l3">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/bohemian-rhapsody.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Bohemiam Rhapsody</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/han-solo.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Han solo</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/first-man.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>First man</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/incredibles.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Incredibles 2</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popular" class="col s12">
+            <div class="row mt-4">
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/incredibles.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Incredibles 2</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/avengers-infinity-war.png" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Avengers Infinity War</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/deadpool.png" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Deadpool</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="trends" class="col s12">
+            <div class="row mt-4">
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/avengers-infinity-war.png" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Avengers Infinity War</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/han-solo.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Han solo</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/jurassic-world.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Jurassic World</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="favorites" class="col s12">
+            <div class="row mt-4">
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/bohemian-rhapsody.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Bohemiam Rhapsody</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/avengers-infinity-war.png" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Avengers Infinity War</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/deadpool.png" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Deadpool</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="recommendations" class="col s12">
+            <div class="row mt-4">
+                <div class="col s12 m6 l6">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/venom.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Venom</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">
+                    <div class="box">
+                        <img src="../../../assets/images/thumbnails/bohemian-rhapsody.jpg" alt="" class="responsive-img center-block">
+                        <div class="txt">
+                            <h5>Bohemiam Rhapsody</h5>
+                        </div>
+                        <div class="col s12 actions">
+                            <a class="waves-effect waves-light btn-small yellow black-text">WATCH NOW</a>
+                            <a class="waves-effect waves-light btn-small transparent">MORE INFO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
